@@ -20,17 +20,14 @@
     <div>
         <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
         <label>Name</label><br>
-        <input type="text" name="name"><br>
+        <input type="text" name="name" ><br>
         <label>ID</label><br>
-        <input type="number" name="id"><br>
-        
+        <input type="text" name="id"><br>
         <label>Course</label><br>
         <input type="text" name="course"><br>
-
         <label>Department</label><br>
         <input type="text" name="department"><br><br>
         <input type="submit" name="Submit">
-
         </form>
     </div>
 </body>

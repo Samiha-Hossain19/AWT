@@ -17,11 +17,11 @@
             </div>
     </div>
         <div text="bold">My Services</div>
-        <div>
+        <div class="container">
             <ul>
-                <li>Patient Appointment</li>
-                <li>Doctor Consultation</li>
-                <li>Doctor Details</li>
+                <li>{{$ser[0]}}</li>
+                <li>{{$ser[1]}}</li>
+                <li>{{$ser[2]}}</li>
             </ul> 
         </div>
 </body>

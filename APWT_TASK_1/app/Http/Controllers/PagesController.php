@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
         public function index(){
-            return view('index');
+            $student=['Samiha Hossain','20-42435-1','APWT','CSE'];
+            return view('index')->with('s',$student);
         }
         public function service(){
-        return view('service');
+            $services=['Patient Appointment','Doctor Consultation','Doctor Details'];
+            return view('service')->with('ser',$services);
     }
     public function contact(){
         return view('contact');
