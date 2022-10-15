@@ -11,7 +11,9 @@
         <div text="bold">My Services</div>
         <div>
             <ul>
-                
+                <li>Patient Appointment</li>
+                <li>Doctor Consultation</li>
+                <li>Doctor Details</li>
             </ul> 
         </div>
     </div>

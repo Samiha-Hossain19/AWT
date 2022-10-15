@@ -13,14 +13,14 @@
             <span>Abu Sakib</span>
             <div>
                 <span>20-#####-1</span>
-                <span class="Bold">Website Developer</span>
+                <span class="Bold">Manager</span>
             </div>
         </div>
         <div>
             <span>Samiha Hossain</span>
             <div>
                 <span>20-#####-1</span>
-                <span class="italic">Front-end Developer</span>
+                <span class="italic">Developer</span>
             </div>
         </div>
     </div>

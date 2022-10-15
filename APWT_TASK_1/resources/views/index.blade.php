@@ -8,26 +8,13 @@
 </head>
 
 <body>
-    <nav>
-        <div class="heading" id="navbar" class="sticky top-0 h-[70px] flex space-x-3 text-lg border-[#020d20] border-b-[1px] items-center w-full">
+    <div class="heading" id="navbar" class="sticky top-0 h-[70px] flex space-x-3 text-lg border-[#020d20] border-b-[1px] items-center w-full">
     <div id="menu">
-        <a id="home" class="navbar-items" href="/">
-        <p>Home</p>
-        </a>
-        <a class="navbar-items" href="/service">
-        <p>Service</p>
-        </a>
-        <a class="navbar-items" href="/ourteam">
-        <p>Our Team</p>
-        </a>
-        <a class="navbar-items" href="/about">
-        <p>About Us</p>
-        </a>
-    </div>
-    <div>
-        <a class="navbar-items" href="/contact">
-            <p>Contact Us</p>
-        </a>
+        <a id="home" class="navbar-items" href="/"><p> Home </a>
+        <a class="navbar-items" href="/service"> Service </a>
+        <a class="navbar-items" href="/ourteam"> Our Team </a>
+        <a class="navbar-items" href="/about"> About Us </a>
+        <a class="navbar-items" href="/contact"> Contact Us </a>
     </div>
 </div>
     <div>
@@ -42,6 +29,7 @@
 
         <label>Department</label><br>
         <input type="text" name="department"><br><br>
+        <input type="submit" name="Submit">
 
         </form>
     </div>
