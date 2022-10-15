@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="heading" id="navbar">
+            <div id="menu">
+                <a id="home" class="navbar-items" href="/"><p> Home &nbsp</a>
+                <a class="navbar-items" href="/service"> Service &nbsp</a>
+                <a class="navbar-items" href="/ourteam"> Our Team &nbsp</a>
+                <a class="navbar-items" href="/about"> About Us &nbsp</a>
+                <a class="navbar-items" href="/contact"> Contact Us</a>
+            </div>
+    </div>
         <div text="bold">My Services</div>
         <div>
             <ul>
@@ -16,6 +24,5 @@
                 <li>Doctor Details</li>
             </ul> 
         </div>
-    </div>
 </body>
 </html>

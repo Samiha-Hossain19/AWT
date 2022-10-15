@@ -8,15 +8,15 @@
 </head>
 
 <body>
-    <div class="heading" id="navbar" class="sticky top-0 h-[70px] flex space-x-3 text-lg border-[#020d20] border-b-[1px] items-center w-full">
-    <div id="menu">
-        <a id="home" class="navbar-items" href="/"><p> Home </a>
-        <a class="navbar-items" href="/service"> Service </a>
-        <a class="navbar-items" href="/ourteam"> Our Team </a>
-        <a class="navbar-items" href="/about"> About Us </a>
-        <a class="navbar-items" href="/contact"> Contact Us </a>
+    <div class="heading" id="navbar">
+        <div id="menu">
+            <a id="home" class="navbar-items" href="/"><p> Home &nbsp</a>
+            <a class="navbar-items" href="/service"> Service &nbsp</a>
+            <a class="navbar-items" href="/ourteam"> Our Team &nbsp</a>
+            <a class="navbar-items" href="/about"> About Us &nbsp</a>
+            <a class="navbar-items" href="/contact"> Contact Us</a>
+        </div>
     </div>
-</div>
     <div>
         <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
         <label>Name</label><br>
