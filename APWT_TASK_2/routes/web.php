@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +14,9 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/login', [UserController::class,'login']);
-Route::post('/login', [UserController::class,'loginValidate']);
-Route::get('/registration', [UserController::class,'reg']);
-Route::post('/registration', [UserController::class,'regValidate']);
-Route::get('/contact', [UserController::class,'contact']);
-Route::post('/contact', [UserController::class,'contactValidate']);
+Route::get('/login', [CustomerController::class,'login']);
+Route::post('/login', [CustomerController::class,'loginValidate']);
+Route::get('/registration', [CustomerController::class,'reg']);
+Route::post('/registration', [CustomerController::class,'regValidate']);
+Route::get('/contact', [CustomerController::class,'contact']);
+Route::post('/contact', [CustomerController::class,'contactValidate']);

@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Models\Cutomer;
 
-class UserController extends Controller
+class CustomerController extends Controller
 {
     public function login()
     {
@@ -17,6 +17,8 @@ class UserController extends Controller
                 'id'=>'required',
                 'password'=>'required',
             ]);
+
+            return redirect('/contact');
         }
     public function reg()
     {
@@ -26,15 +28,18 @@ class UserController extends Controller
     {
             $request->validate(
             [
-                'name'=>'required',
+                
                 'id'=>'required',
+                'uname'=>'required',
                 'password'=>'required',
                 'cpassword'=>'required_with:cpassword|same:cpassword',
                 'gender'=>'required',
                 'email'=>'required|email',
-                'contact'=>'required',
                 'dob'=>'required',
+                'contact'=>'required',
+                
             ]);
+            return redirect('/login');
         }
     public function contact()
     {

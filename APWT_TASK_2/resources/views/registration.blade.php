@@ -21,7 +21,7 @@
                 <div><label>NAME: </label></div>
                 <div>
                     <input type="text" placeholder="Enter your name" name="uname"/>
-                    @error('name')
+                    @error('uname')
                     {{$message}}
                     @enderror
                 </div>
@@ -54,7 +54,11 @@
                 </div>
             </div>
             <div>
-                <div><label>GENDER</label></div>
+                <div><label>GENDER &nbsp</label>
+                @error('gender')
+                {{$message}}
+                @enderror
+                </div>
                 <div>
                     <div>
                         <input type="radio" name="gender"/>
@@ -63,10 +67,9 @@
                     <div>
                         <input type="radio" name="gender"/>
                         <label>Female</label>
+                    
                     </div>
-                    @error('gender')
-                    {{$message}}
-                    @enderror
+                    
                 </div>
             </div>
             <div>
