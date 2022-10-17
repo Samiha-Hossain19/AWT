@@ -17,12 +17,22 @@ class CustomerController extends Controller
                 'id'=>'required',
                 'password'=>'required',
             ]);
+<<<<<<< HEAD
             $customer = Customer::where('id', '=', $request->id)->where('password', '=', $request->password)->first();
             if (!$customer)
             {
                 return back()
                 ->withErrors(['Incorrect Id or Password']);
             }
+=======
+        $customer = Customer::where('id', '=', $request->id)->where('password', '=', $request->password)->first();
+        if (!$customer)
+        {
+            return back()
+            ->withErrors(['Incorrect Id or Password']);
+        }
+
+>>>>>>> 2c441d30a3b90bf2efd317f11554b4b4e1819ea0
             return redirect('/contact');
         }
     public function reg()
