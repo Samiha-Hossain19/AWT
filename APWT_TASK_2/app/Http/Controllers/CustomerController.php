@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Models\Cutomer;
+use App\Models\Customer;
 
 class CustomerController extends Controller
 {
@@ -17,6 +17,12 @@ class CustomerController extends Controller
                 'id'=>'required',
                 'password'=>'required',
             ]);
+        $customer = Customer::where('id', '=', $request->id)->where('password', '=', $request->password)->first();
+        if (!$customer)
+        {
+            return back()
+            ->withErrors(['Incorrect Id or Password']);
+        }
 
             return redirect('/contact');
         }
@@ -39,6 +45,16 @@ class CustomerController extends Controller
                 'contact'=>'required',
                 
             ]);
+        $customer = new Customer();
+        $customer->id = $request->id;
+        $customer->uname = $request->uname;
+        $customer->password = $request->password;
+        $customer->email = $request->email;
+        $customer->gender = $request->gender;
+        $customer->dob = $request->dob;
+        $customer->contact = $request->contact;
+
+        $customer->save();
             return redirect('/login');
         }
     public function contact()
