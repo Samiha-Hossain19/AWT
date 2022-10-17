@@ -84,7 +84,7 @@
             <div>
                 <div><label>Contact: </label></div>
                 <div>
-                    <input type="text" placeholder="Enter your email" name="contact"/>
+                    <input type="text" placeholder="Enter your contact number" name="contact"/>
                     @error('contact')
                     {{$message}}
                     @enderror
