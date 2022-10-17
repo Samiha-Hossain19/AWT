@@ -18,6 +18,7 @@
         <h2>Register Here</h2>
         <form action="/registration" method="POST">
             {{csrf_field()}}
+            
                 <div><label>NAME: </label></div>
                 <div>
                     <input type="text" placeholder="Enter your name" name="uname"/>
