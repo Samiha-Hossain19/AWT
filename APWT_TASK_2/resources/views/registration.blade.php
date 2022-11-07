@@ -14,6 +14,7 @@
             <a class="navbar-items" href="/login"> Login &nbsp</a>
             <a class="navbar-items" href="/registration"> Registration &nbsp</a>
             <a class="navbar-items" href="/contact"> Contact</a>
+            <a class="navbar-items" href="/edit">Edit Customer</a>
         </div>
         <h2>Register Here</h2>
         <form action="/registration" method="POST">

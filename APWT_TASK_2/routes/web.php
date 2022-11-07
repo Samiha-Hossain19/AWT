@@ -20,3 +20,4 @@ Route::get('/registration', [CustomerController::class,'reg']);
 Route::post('/registration', [CustomerController::class,'regValidate']);
 Route::get('/contact', [CustomerController::class,'contact']);
 Route::post('/contact', [CustomerController::class,'contactValidate']);
+Route::get('/edit', [CustomerController::class,'edit']);

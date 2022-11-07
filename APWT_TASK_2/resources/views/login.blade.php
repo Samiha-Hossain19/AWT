@@ -16,6 +16,7 @@
             <a class="navbar-items" href="/login"> Login &nbsp</a>
             <a class="navbar-items" href="/registration"> Registration &nbsp</a>
             <a class="navbar-items" href="/contact"> Contact</a>
+            <a class="navbar-items" href="/edit">Edit Customer</a>
         </div>
     </div>
             <h3>LOGIN</h3><br>

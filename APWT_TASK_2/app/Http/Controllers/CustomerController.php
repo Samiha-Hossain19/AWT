@@ -70,4 +70,9 @@ class CustomerController extends Controller
 
         return redirect('/contact');
     }
+    public function edit()
+    {
+        $customer = Customer::all();
+        return view('/edit')->with('customer',$customer);
+    }
 }
